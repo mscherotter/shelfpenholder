@@ -2,11 +2,11 @@
 An parametric-defined adjustable pen holder that hangs from 2cm high shelves from [the Container Store](https://www.containerstore.com/s/driftwood-melamine-shelves/d?productId=10018499).
 ![In use](inuse.jpg)
 ## Parameters
-- Columns: number of horizontal cels
-- Rows: number of vertical cels
-- Size: the size in mm of each cell square
-- Depth: the depth in mm of the cells 
-- Inner Thickness: the thickness of the spacing between each cell
+- Number of columns: number of horizontal cels
+- Number of rows: number of vertical cels
+- Size of each cell in mm.: the size in mm of each cell square
+- Depth in mm: the depth in mm of the cells 
+- Divider thickness in mm.: the thickness of the spacing between each cell
 
 ## Building the Model
 This is the most productive workflow that I've found for developing OpenJSCAD-based models:
