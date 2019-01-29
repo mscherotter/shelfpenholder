@@ -17,6 +17,7 @@ This is the most productive workflow that I've found for developing OpenJSCAD-ba
 4. Open the [shelfPenHolder.js](shelfPenHolder.js) in Visual Studio Code
 5. Modify the parameters to fit your needs
 6. Press the Generate STL button to download the STL file that you can print from a 3D Printer
-Here is a [model](shelfPenHolder.stl) generated from the default parameters.
+
+Here is a [model](shelfPenHolder.stl) generated from the default parameters.  The model can be printed by most printers without supports.
 
 ![Model Printout](printout.jpg)
