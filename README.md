@@ -20,6 +20,5 @@ This is the most productive workflow that I've found for developing OpenJSCAD-ba
 
 Here is a [model](shelfPenHolder.stl) generated from the default parameters.  The model can be printed by most printers without supports.
 
-![Printable model](shelfPenHolder.stl)
 ![Model printout](printout.jpg)
 
