@@ -1,5 +1,5 @@
 # Shelf Pen Holder
-An parametric-defined adjustable Pen Holder that hangs from 2cm high shelves.
+An parametric-defined adjustable Pen Holder that hangs from 2cm high shelves from [the Container Store](https://www.containerstore.com/s/driftwood-melamine-shelves/d?productId=10018499).
 ![In use](inuse.jpg)
 ## Parameters
 - Columns: number of horizontal cels
