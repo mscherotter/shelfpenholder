@@ -13,7 +13,9 @@ function getParameterDefinitions() {
         { name: 'depth', type: 'float', initial: 80, caption: "Depth in mm."},
         { name: 'innerThickness', type: 'float', initial: 1.5, caption: "Divider thickness in mm."},
         { name: 'clipWidth', type: 'float', initial: 10, caption: "clip width in mm."},
-        { name: 'round', type: 'checkbox', initial: false, caption: "round holes"}
+        { name: 'clipLength', type: 'float', initial: 50, caption: "clip length in mm."},
+        { name: 'clipHeight', type: 'float', initial: 50, caption: "clip height in mm."},
+        { name: 'round', type: 'checkbox', checked: false, caption: "round holes"}
     ];
 }
 
@@ -36,10 +38,10 @@ function preparePrint(model, width, height, depth){
 
 // create a clip for 20mm high shelves
 function createClip(params) {
-    return color("green", cube({size:[params.clipWidth, 50, 10], center:false}))
-    .union(cube({size:[params.clipWidth, 10, -50], center:false}).translate([0,30,5]))
-    .union(cube({size:[params.clipWidth, 10, -40], center:false}))
-    .translate([0,-41,params.depth - 16])
+    return color("green", cube({size:[params.clipWidth, params.clipLength, 10], center:false}).translate([0,-params.clipLength+50,0]))
+    .union(cube({size:[params.clipWidth, 10, -params.clipHeight], center:false}).translate([0,30,5]))
+    .union(cube({size:[params.clipWidth, 10, -params.clipHeight+10], center:false}).translate([0,-params.clipLength+50,0]))
+    .translate([0,-42,params.depth - 16])
     .rotateX(-10)
     .union(color("blue", (cube({size:[params.clipWidth, 30, 10], center:false}).translate([0,-27.5,params.depth -10]))));
 }
