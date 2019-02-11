@@ -7,6 +7,10 @@ An parametric-defined adjustable pen holder that hangs from 2cm high shelves fro
 - Size of each cell in mm.: the size in mm of each cell square
 - Depth in mm: the depth in mm of the cells 
 - Divider thickness in mm.: the thickness of the spacing between each cell
+- Clip width in mm.: the width of each clip
+- Clip depth in mm.: the depth of the flanges of the clips
+- Shelf thickness in mm: the shelf thickness in mm
+- Round holes: check to make holes round instead of square
 
 ## Building the Model
 This is the most productive workflow that I've found for developing OpenJSCAD-based models:
