@@ -4,18 +4,17 @@
 // MIT Licenese: https://github.com/mscherotter/shelfpenholder/blob/master/LICENSE 
 // Runs with OpenJSCAD website: http://openjscad.azurewebsites.net/
 
-
 function getParameterDefinitions() {
     return [
-        { name: 'columns', type: 'int', initial: 6, caption: "Number of columns" },
-        { name: 'rows', type: 'int', initial: 4, caption: "Number of rows" },
-        { name: 'size', type: 'float', initial: 12, caption: "Size of each cell in mm."},
-        { name: 'depth', type: 'float', initial: 80, caption: "Depth in mm."},
-        { name: 'innerThickness', type: 'float', initial: 1.5, caption: "Divider thickness in mm."},
-        { name: 'clipWidth', type: 'float', initial: 10, caption: "Clip width in mm."},
-        { name: 'clipDepth', type: 'float', initial: 50, caption: "Clip depth in mm."},
-        { name: 'shelfThickness', type: 'float', initial: 20, caption: "Shelf thickness in mm."},
-        { name: 'round', type: 'checkbox', checked: false, caption: "Round holes"}
+        { name: 'columns',          type: 'int', initial: 6, caption: "Number of columns" },
+        { name: 'rows',             type: 'int', initial: 4, caption: "Number of rows" },
+        { name: 'size',             type: 'float', initial: 12, caption: "Size of each cell in mm."},
+        { name: 'depth',            type: 'float', initial: 80, caption: "Depth in mm."},
+        { name: 'innerThickness',   type: 'float', initial: 1.5, caption: "Divider thickness in mm."},
+        { name: 'clipWidth',        type: 'float', initial: 10, caption: "Clip width in mm."},
+        { name: 'clipDepth',        type: 'float', initial: 50, caption: "Clip depth in mm."},
+        { name: 'shelfThickness',   type: 'float', initial: 20, caption: "Shelf thickness in mm."},
+        { name: 'round',            type: 'checkbox', initial: false, caption: "Round holes"}
     ];
 }
 
@@ -36,7 +35,7 @@ function preparePrint(model, width, height, depth){
         .translate([-width/2,height/2,depth]);
 }
 
-// create a clip for 20mm high shelves
+// create a clip for shelves
 function createClip(params) {
     var clipLength = params.shelfThickness + 30;
     return color("green", cube({size:[params.clipWidth, clipLength, 10], center:false}).translate([0,-clipLength+50,0]))

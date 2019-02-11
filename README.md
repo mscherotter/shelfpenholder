@@ -1,5 +1,10 @@
 # Shelf Hanging Pen Holder
 An parametric-defined adjustable pen holder that hangs from 2cm high shelves from [the Container Store](https://www.containerstore.com/s/driftwood-melamine-shelves/d?productId=10018499).
+
+A version of this is also a [Customizable model on Thingiverse](https://www.thingiverse.com/thing:3402746).  The source file that it uses is [here](shelfpenholder.scad).
+
+I created a video showing the process of building this model [here](https://www.youtube.com/watch?v=NxCsi96UtqE).
+
 ![In use](inuse.jpg)
 ## Parameters
 - Number of columns: number of horizontal cels
